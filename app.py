@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
-
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier 
@@ -25,31 +18,7 @@ def loadPage():
 
 @app.route("/", methods=['POST'])
 def predict():
-    
-    '''
-    SeniorCitizen
-    MonthlyCharges
-    TotalCharges
-    gender
-    Partner
-    Dependents
-    PhoneService
-    MultipleLines
-    InternetService
-    OnlineSecurity
-    OnlineBackup
-    DeviceProtection
-    TechSupport
-    StreamingTV
-    StreamingMovies
-    Contract
-    PaperlessBilling
-    PaymentMethod
-    tenure
-    '''
-    
-
-    
+     
     inputQuery1 = request.form['query1']
     inputQuery2 = request.form['query2']
     inputQuery3 = request.form['query3']
